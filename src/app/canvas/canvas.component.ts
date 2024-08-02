@@ -19,9 +19,9 @@ export class CanvasComponent {
 
   constructor() {
     // Initialize with some sample images
-    this.loadImage('https://via.placeholder.com/150', 50, 50, 150, 150);
-    this.loadImage('https://via.placeholder.com/200', 250, 150, 200, 200);
-    this.loadImage('https://via.placeholder.com/100', 500, 300, 100, 100);
+    this.loadImage('assets/image1.jpg', 50, 50, 150, 150);
+    this.loadImage('assets/image2.jpg', 250, 150, 200, 200);
+    this.loadImage('assets/image3.jpg', 500, 300, 100, 100);
   }
 
   loadImage(src: string, x: number, y: number, width: number, height: number) {

@@ -1,12 +1,23 @@
 .canvas-container {
-    position: relative;
-    border: 1px solid #000;
-    width: 800px;
-    height: 600px;
-  }
-  
-  .image-layer {
-    position: absolute;
-    background-size: cover;
-    cursor: move;
-  }
+  position: relative;
+  width: 100%;
+  height: 500px; 
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  overflow: hidden; 
+}
+
+
+.image-layer {
+  position: absolute;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  cursor: move; 
+  border: 2px solid rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  transition: border-color 0.3s; 
+}
+
+.image-layer:hover {
+  border-color: rgba(0, 0, 0, 0.5); 
+}
