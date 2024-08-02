@@ -1,0 +1,8 @@
+<div class="canvas-container" (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)" (mouseup)="onMouseUp()">
+    <div *ngFor="let img of images; let i = index"
+         class="image-layer"
+         [ngStyle]="{'background-image': 'url(' + img.src + ')', 'left.px': img.x, 'top.px': img.y, 'width.px': img.width, 'height.px': img.height}"
+         (mousedown)="selectImage(i, $event)">
+    </div>
+  </div>
+  

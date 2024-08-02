@@ -1,0 +1,12 @@
+.canvas-container {
+    position: relative;
+    border: 1px solid #000;
+    width: 800px;
+    height: 600px;
+  }
+  
+  .image-layer {
+    position: absolute;
+    background-size: cover;
+    cursor: move;
+  }
